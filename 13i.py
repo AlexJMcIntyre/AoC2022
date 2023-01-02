@@ -79,48 +79,6 @@ def compare_lists(lf, rf):
             rf = [rf]
         return compare_lists(lf, rf)
 
-# def compare_lists(lf, rf):
-#     global solved, correct_order
-#     print("compare ", lf, " vs ", rf)
-#     if type(lf) is int and type(rf) is int:  # if both are integers
-#         if lf == rf:
-#             print("Same, continue")
-#             pass
-#         elif lf<rf:
-#             print("left is smaller, so inputs are *in the right order*")
-#             solved = 1
-#             correct_order = 1
-#         else:
-#             print("right is smaller, so inputs are *not* in the right order")
-#             solved = 1
-#             correct_order = 0
-#     elif type(lf) is list and type(rf) is list:  # elif both are lists
-#         i = 0
-#         while solved == 0:
-#             if len(lf) > i and len(rf) > i:  # compare the ith from each
-#                 compare_lists(lf[i], rf[i])
-#             elif len(lf) < i and len(rf) < i:  # both same, continue
-#                 print("both same")
-#                 pass
-#             elif len(lf) <= i:  # left smaller
-#                 print("Left side ran out of items, so inputs are in *the right order*")
-#                 solved = 1
-#                 correct_order = 1
-#             elif len(rf) <= i:  # right smaller
-#                 print("Right side ran out of items, so inputs are *not* in the right order")
-#                 solved = 1
-#                 correct_order = 0
-#             else:
-#                 print("no comparison, move on")
-#                 break
-#             i += 1
-#     else:  # else one is integer
-#         print("mix, convert")
-#         if type(lf) is int:
-#             lf = [lf]
-#         else:
-#             rf = [rf]
-#         compare_lists(lf, rf)
 
 sol = 0
 for i in range(0, len(ds), 3):
